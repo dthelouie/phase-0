@@ -30,3 +30,38 @@ help - gives information on the given command
 
 ### 1.4 Forking and Cloning Reflection
 If I were writing instructions on how to create, fork, and clone a repo, I would say to create a repo on the user's GitHub homepage, fork a repo on the repo's GitHub page, and then use the provided clone links to clone it in a terminal.  Using the GitHub website is very easy and straightforward for new users.  Forking a repository is advantageous to creating a new one because you can view someone else's work and modify it without changing what the original author has in their repository, so you can work with it on your own.  I didn't have any troubles setting up git or GitHub because all of the instructions were very straightforward, but I learned about how easy it is to access open source code and all the potential learning can be done from the work of others, as well as how this could work out for future collaborative efforts.
+
+#### 1.5 Tracking Changes Reflection
+
+How does tracking and adding changes make developers' lives easier?
+
+Tracking and adding changes makes developers' lives easier because you can see the up-to-date work of all collaborators in a central location. 
+
+What is a commit?
+
+A commit is a snapshot of the updated file that is ready to be merged into the master version of the file.  
+
+What are the best practices for commit messages?
+
+Commit messages are usually written in the present or imperative tense, as if you're explaining your task before you did it ("I have to do this" rather than "I did that").  
+
+What does the HEAD^ argument mean?
+
+The HEAD^ argument corresponds with the last item that was committed.  Earlier commits can be identified by HEAD^n with n being a number in the list of committed files.  
+
+What are the 3 stages of a git change and how do you move a file from one stage to the other?
+
+The three stages of git changes are untracked, added, and committed.  You move from untracked to added with "git add .".  You move from added to committed with "git commit -m MESSAGE" where message is your commit message. 
+
+Write a handy cheatsheet of the commands you need to commit your changes?
+
+git add .
+git commit -m "MESSAGE"
+
+What is a pull request and how do you create and merge one?
+
+Pull requests bring everything from the origin to your local git so you can have the most recent iteration of everyone's work.  This way you can always have an up-to-date working environment.
+
+Why are pull requests preferred when working with teams?
+
+Pull requests are preffered because when people are working separately, they can have easy access to the most updated work in their local git environment
