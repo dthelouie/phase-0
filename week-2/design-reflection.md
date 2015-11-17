@@ -26,4 +26,4 @@ Which parts of the challenge did you find tedious?
 
 I found the making of a site map to be tedious, but I see how useful it can be.  The main reason why I thought it was tedious was because I don't feel like I have a lot to put on there right now, but with more time in DBC, I know that will change.  
  
-![Alt text](/imgs/site-map.png "Site Map")
+![Alt text](imgs/site-map.png)
