@@ -59,3 +59,25 @@ aside > p {
 .cs{
     border-bottom: 1px solid black;
 }
+
+/*
+1. What is important to know when linking an external file (like a stylesheet) to an HTML file?
+
+    You need to know what path you're using, absolute or relative?  Generally, I find relative paths to be easier, but they can be tricky if you don't know your directory's heirarchy.
+
+2. What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+
+    We had to use CSS properties such as align, float and clear.  The hardest part was trying to get the list into two separate columns.
+
+3. What CSS did you use to modify the element style (like size, color, etc.)
+
+    We used properties like font-size, font-weight, color, and background color.
+
+4. Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you didn't, how would you know which one to add to your HTML?
+
+    We made a class to stop the Geico image from moving into the space of the list, and we made a class to make a border between the customer service message and the copyright at the bottom of the site.
+
+5. When you compared your site to the actual code base, which do you think had cleaner cose that followed the best practices and why?
+
+    After looking at the actual site's code base, we felt that we had a neater code because we didn't do any of the styling in HTML, and we kept all of our styling in CSS.
+*/
