@@ -37,7 +37,8 @@ ul {
 
 ul li {
     float: left;
-    width: 50%;
+    width: 48%;
+    margin: 10px;
 }
 .clear {
     clear: both;
