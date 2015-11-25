@@ -1,0 +1,60 @@
+body {
+    color: #000080;
+    background-color: #ffffff;
+}
+
+header {
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+h1 > span {
+    font-size: 50px;
+}
+h1 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+a {
+    color: #800080;
+}
+
+a:visited {
+    color: #ff0000;
+}
+
+ul {
+    width: 100%;
+}
+
+ul li {
+    float: left;
+    width: 50%;
+}
+.clear {
+    clear: both;
+}
+
+img {
+    margin: 10px;
+}
+
+aside{
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+aside > p {
+    font-size: 10px;
+}
+.cs{
+    border-bottom: 1px solid black;
+}
