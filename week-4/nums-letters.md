@@ -35,3 +35,28 @@ end
 mins_in_decades(1)
 
 ```
+
+#Reflection:
+###1. How does Ruby handle addition, subtraction, multiplication, and division of numbers?
+
+	Ruby can do handle basic math functions whether they're assigned to a variable or in a printing command.  Math functions can also be used within methods.  
+
+###2. What is the difference between integers and floats?
+
+	Integers are whole numbers, while floats include decimals.
+
+###3. What is the difference between integer and float division?
+
+	The main difference between the two is that when floats are divided, the number that they will return will include decimals to give you an exact number.  Integers react by giving a quotient, but without a remainder or a decimal.  If you want to know the remainder of a quotient, you would use a modulus.
+
+###4. What are strings? Why and when would you use them?
+
+	Strings are letters or numbers that are used for receiving input and giving output.  They are housed in quotes to differenciate themselves from variables and integers.  
+
+###5. What are local variables? Why and when would you use them?
+
+	A local variable is an item that can be assigned as a string, an integer, a math function, or even another variable.  They can be used to condense larger functions or elements into smaller, more manageable packages.  
+
+###6. How was this challenge? Did you get a good review of some of the basics?
+
+	I enjoyed this challenge, as I got to go over a lot of Ruby concepts that I haven't used since my initial interview for Dev Bootcamp.  Now that it's becoming more fresh in my mind, I'm ready to apply it to the next challenges.
