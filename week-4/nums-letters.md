@@ -2,7 +2,7 @@
 
 ###1. What does "puts" do?
 	
-	The command "puts" prints the corresponding output and "nil" with a new line.  
+	The command "puts" prints the following output and "nil" with a new line.  If the output includes a variable, it prints the content of that variable instead of its name.  Strings and integers will be printed as they are shown in the puts command.
 
 ###2. What is an integer?  What is a float?
 
