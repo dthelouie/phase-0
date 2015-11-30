@@ -12,6 +12,8 @@
 
 	Division with floats will give you exact numbers decimals, while division with integers will give you only the quotient and will disregard the remainder.  
 
+
+##Mini Challenges
 ```ruby
 
 def hours_in_years(years)
