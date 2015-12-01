@@ -1,0 +1,38 @@
+header {
+    background-color: red;
+    border: 2px solid black;
+    margin-bottom: 2em;
+}
+
+header>h1{
+    display: inline-block;
+}
+
+header>img{
+    display: inline-block;
+    height: 100px;
+    float: right;
+}
+
+footer {
+    background-color: blue;
+    clear: both;
+    border: 2px solid black;
+    margin-top: 2em;
+}
+.column-1 {
+    background-color: green;
+    float: left;
+    width: 42%;
+    margin-left: 3em;
+    border: 2px solid black;
+    margin-bottom: 2em;
+}
+.column-2 {
+    background-color: orange;
+    float: right;
+    width: 42%;
+    margin-right: 3em;
+    border: 2px solid black;
+    margin-bottom: 2em;
+}
