@@ -12,19 +12,13 @@
 
 # Your Solution Below
 def smallest_integer(list_of_nums)
-  i = 0
-  n = 1
-  if list_of_nums.length == 1
-    return list_of_nums[0]
+  i = 1
+  num = list_of_nums[0]
+  while i < list_of_nums.length
+  	if num > list_of_nums[i]
+  		num = list_of_nums[i]
+  	end
+  	i+=1
   end
-  while i + n < list_of_nums.length
-      if list_of_nums[i] < list_of_nums[n]
-        n+=1
-        num = list_of_nums[i]
-      else
-        i+=1
-        num = list_of_nums[n]
-      end
-  end
-  return num
+  	return num
 end
