@@ -38,6 +38,7 @@ class Fantasy_Basketball
 	end
 
 	def roster
+		puts "Roster:"
 		@roster.each do |player, positions| puts "#{player}: #{positions}"
 			# puts player.to_s + ": " + positions.to_s
 			# puts
@@ -45,6 +46,7 @@ class Fantasy_Basketball
 	end
 
 	def active_roster
+		puts "Active Roster:"
 		@active_roster.each do |position, player| puts "#{position}: #{player}"
 		end
 	end
