@@ -83,13 +83,7 @@ class Fantasy_Basketball
 					puts "Would you like to replace #{@active_roster[position][i]} with #{player}? (y/n)"
 					ans = gets.chomp
 					if ans == "y"
-						@Bench << @active_roster[position][i]
-						puts "Benched #{@Bench[-1]}"
-						@active_roster[position][i] = player
-						if @Bench.include?(player)
-							@Bench.delete_if{|spot| spot == player}
-						end
-						puts "Started #{@active_roster[position][i]}"
+						replace_player(player, position)
 						break
 					elsif ans == "n"
 						i += 1
@@ -102,24 +96,34 @@ class Fantasy_Basketball
 			@active_roster[position] = player
 			puts "Moved #{player} to #{position}"
 		elsif @active_roster[position] != nil
-			puts "Would you like to replace #{@active_roster[position]} with #{player}? (y/n)"
-			ans = gets.chomp
-			if ans == "y"
-				puts "Benched #{@active_roster[position]}"
-				@Bench << @active_roster[position]
-				@active_roster[position] = player
-				if @Bench.include?(player)
-					@Bench.delete_if{|spot| spot == player}
-				end
-				puts "Starting #{@active_roster[position]}"
-			elsif ans == "n"
-				puts @active_roster[position]
-			else
-				puts "Invalid Response"
-			end
+			replace_player(player, position)
 		end
 
 
+	end
+
+	def replace_player(player, position)
+		puts "Would you like to replace #{@active_roster[position]} with #{player}? (y/n)"
+		ans = gets.chomp
+		if ans == "y"
+			if @active_roster[position].kind_of?(Array)
+			@Bench << @active_roster[position][i]
+			puts "Benched #{@Bench[-1]}"
+			elsif @active_roster[position].kind_of?(String)
+			puts "Benched #{@active_roster[position]}"
+			@Bench << @active_roster[position]
+			@active_roster[position] = player
+				if @Bench.include?(player)
+					@Bench.delete_if{|spot| spot == player}
+				end
+			puts "Starting #{@active_roster[position]}"
+			end
+		elsif ans == "n"
+				puts @active_roster[position]
+		else
+			puts "Invalid Response"
+		end
+		
 	end
 
 	def bench_player(player)
@@ -149,6 +153,7 @@ class Fantasy_Basketball
 				@active_roster["Utility"].delete_at(@active_roster["Utility"].index(player))
 			end
 		end
+		puts "Dropped #{player}"
 	end
 
 	def add_player(player, array_of_positions)
