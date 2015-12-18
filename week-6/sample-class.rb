@@ -1,11 +1,13 @@
 class Fantasy_Basketball
 	attr_reader :league
-	attr_writer :favorite_team
-	attr_accessor :owner
+	attr_writer :team
+	attr_accessor :owner, :team_name
 	def initialize
 		@league = "Retirement Year"
-		@owner = "David Louie"
 		@favorite_team = "Los Angeles Clippers"
+		@team_name = "Festivus Ezeli"
+		@owner = "David Louie"
+		
 
 		@roster = {
 			"Stephen Curry" => ["PG", "SG", "G", "Utility"],
@@ -19,7 +21,7 @@ class Fantasy_Basketball
 			"Kent Bazemore" => ["SG", "SF", "G", "F", "Utility"],
 			"Dwyane Wade" => ["PG", "SG", "G", "Utility"],
 			"Dirk Nowitzki" => ["PF", "C", "F", "Utility"],
-			"Kristaps Porzingis" => ["PF", "F", "Utility"],
+			"Festus Ezeli" => ["C", "Utility"],
 			"Trevor Ariza" => ["SG", "SF", "G", "F", "Utility"]
 		}
 
@@ -153,26 +155,27 @@ class Fantasy_Basketball
 
 end
 
-# fantasy = Fantasy_Basketball.new
-# puts fantasy.owner
-# puts fantasy.roster
-# puts fantasy.active_roster
-# puts fantasy.start_player("Stephen Curry", "PG")
-# puts fantasy.start_player("Kevin Durant", "SF")
-# puts fantasy.start_player("Blake Griffin", "PF")
-# puts fantasy.start_player("DeAndre Jordan", "C")
-# puts fantasy.start_player("Paul George", "SG")
-# puts fantasy.start_player("Wesley Matthews", "G")
-# puts fantasy.start_player("Dirk Nowitzki", "Utility")
-# puts fantasy.start_player("Paul Millsap", "F")
-# puts fantasy.start_player("Trevor Ariza", "Utility")
-# puts fantasy.bench_player("Kristaps Porzingis")
-# puts fantasy.bench_player("Dwyane Wade")
-# puts fantasy.bench_player("Kent Bazemore")
-# puts fantasy.start_player("Rajon Rondo", "PG")
-# puts fantasy.active_roster
-# puts fantasy.drop_player("Trevor Ariza")
-# puts fantasy.add_player("Carmelo Anthony", ["SF", "PF", "F", "Utility"])
-# puts fantasy.start_player("Carmelo Anthony", "Utility")
-# puts fantasy.show_bench
-# puts fantasy.active_roster
+fantasy = Fantasy_Basketball.new
+puts fantasy.owner
+puts fantasy.roster
+puts fantasy.active_roster
+puts fantasy.start_player("Stephen Curry", "PG")
+puts fantasy.start_player("Kevin Durant", "SF")
+puts fantasy.start_player("Blake Griffin", "PF")
+puts fantasy.start_player("DeAndre Jordan", "C")
+puts fantasy.start_player("Paul George", "SG")
+puts fantasy.start_player("Wesley Matthews", "G")
+puts fantasy.start_player("Dirk Nowitzki", "Utility")
+puts fantasy.start_player("Paul Millsap", "F")
+puts fantasy.start_player("Trevor Ariza", "Utility")
+puts fantasy.bench_player("Kristaps Porzingis")
+puts fantasy.bench_player("Dwyane Wade")
+puts fantasy.bench_player("Kent Bazemore")
+puts fantasy.start_player("Rajon Rondo", "PG")
+puts fantasy.active_roster
+puts fantasy.drop_player("Trevor Ariza")
+puts fantasy.add_player("Carmelo Anthony", ["SF", "PF", "F", "Utility"])
+puts fantasy.start_player("Carmelo Anthony", "Utility")
+puts fantasy.start_player("Dwyane Wade", "G")
+puts fantasy.active_roster
+puts fantasy.show_bench
