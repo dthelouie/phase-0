@@ -1,6 +1,6 @@
 class Fantasy_Basketball
 	attr_reader :league
-	attr_writer :team
+	attr_writer :favorite_team
 	attr_accessor :owner, :team_name
 	def initialize
 		@league = "Retirement Year"
@@ -40,25 +40,28 @@ class Fantasy_Basketball
 	end
 
 	def roster
+		puts
 		puts "Roster:"
 		@roster.each do |player, positions| puts "#{player}: #{positions}"
-			# puts player.to_s + ": " + positions.to_s
-			# puts
 		end
+		puts
 	end
 
 	def active_roster
+		puts
 		puts "Active Roster:"
 		@active_roster.each do |position, player| puts "#{position}: #{player}"
 		end
+		puts
 	end
 
 	def show_bench
+		puts
 		puts "Benched Players:"
 		@Bench.each do |player|
 			puts player
-			puts
 		end
+		puts
 	end
 
 	def start_player(player, position)
@@ -156,21 +159,20 @@ class Fantasy_Basketball
 end
 
 fantasy = Fantasy_Basketball.new
-puts fantasy.owner
-puts fantasy.roster
-puts fantasy.active_roster
-puts fantasy.start_player("Stephen Curry", "PG")
-puts fantasy.start_player("Kevin Durant", "SF")
-puts fantasy.start_player("Blake Griffin", "PF")
-puts fantasy.start_player("DeAndre Jordan", "C")
-puts fantasy.start_player("Paul George", "SG")
-puts fantasy.start_player("Wesley Matthews", "G")
-puts fantasy.start_player("Dirk Nowitzki", "Utility")
-puts fantasy.start_player("Paul Millsap", "F")
-puts fantasy.start_player("Trevor Ariza", "Utility")
-puts fantasy.bench_player("Festus Ezeli")
-puts fantasy.bench_player("Dwyane Wade")
-puts fantasy.bench_player("Kent Bazemore")
+fantasy.start_player("Stephen Curry", "PG")
+fantasy.start_player("Kevin Durant", "SF")
+fantasy.start_player("Blake Griffin", "PF")
+fantasy.start_player("DeAndre Jordan", "C")
+fantasy.start_player("Paul George", "SG")
+fantasy.start_player("Wesley Matthews", "G")
+fantasy.start_player("Dirk Nowitzki", "Utility")
+fantasy.start_player("Paul Millsap", "F")
+fantasy.start_player("Trevor Ariza", "Utility")
+fantasy.active_roster
+fantasy.bench_player("Festus Ezeli")
+fantasy.bench_player("Dwyane Wade")
+fantasy.bench_player("Kent Bazemore")
+fantasy.show_bench
 puts fantasy.start_player("Rajon Rondo", "PG")
 puts fantasy.active_roster
 puts fantasy.drop_player("Trevor Ariza")
@@ -179,3 +181,13 @@ puts fantasy.start_player("Carmelo Anthony", "Utility")
 puts fantasy.start_player("Dwyane Wade", "G")
 puts fantasy.active_roster
 puts fantasy.show_bench
+
+puts fantasy.owner
+puts fantasy.team_name
+fantasy.owner = "Steve Ballmer"
+puts fantasy.owner
+puts fantasy.favorite_team
+
+
+
+
