@@ -86,3 +86,21 @@ STATE_DATA.each do |state, info|
 end
 #=======================================================================
 # Reflection Section
+# 1. What are the differences between the two different hash syntaxes shown in the state_data file?
+# => The first layer of the hash uses "=>" to assign values to keys, and the nested hash uses
+# => a colon ":" to assign keys to values, but also labels the keys as symbols.
+# 2. What does require_relative do? How is it different from require?
+# => require_relative is a subset of require, as it allows you to use a relative path
+# => as opposed to an absolute path to link other files and their data to the current file.
+# 3. What are some ways to iterate through a hash?
+# => There are multiple "each" methods that can be used to iterate through hashes.
+# => Some of these methods use different data.  Using "each" or "each_pair" to iterate
+# => through the hash while using both the key and the value for different purposes.
+# => You could also use "each_key" or "each_value" to use only the data stored on the
+# => keys or values.
+# 4. When refactoring virus_effects, what stood out to you about the variables, if anything?
+# => The instance variables that were declaredwere already being used in the
+# => individual methods, so they didn't need to be passed as arguments.
+# 5. What concept did you most solidify in this challenge?
+# => I learned more about the use of instance variables and refactoring so that we aren't
+# => writing code that could potentially be redundant.
