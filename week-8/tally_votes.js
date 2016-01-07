@@ -108,8 +108,29 @@ for(var office in voteCount) {
 // __________________________________________
 // Refactored Solution
 
+for(var name in votes) {
+  if(votes.hasOwnProperty(name)) {
+    var obj = votes[name];
+    for(var prop in obj) {
+      var canidateName = votes[name][prop];
+      if(voteCount[prop].hasOwnProperty(canidateName)) {
+        voteCount[prop][canidateName] += 1;
+      } else {
+        voteCount[prop][canidateName] = 1;
+      }
+    }
+  }
+}
 
-
+for (var office in voteCount) {
+  var mostVotes = 0;
+  for (var candidate in voteCount[office] ) {
+    if (voteCount[office][candidate] > mostVotes) {
+      officers[office] = candidate;
+      mostVotes = voteCount[office][candidate];
+    }
+  } 
+}
 
 
 // __________________________________________
