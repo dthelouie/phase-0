@@ -7,7 +7,7 @@
 # Outline:
 
 # Create a method to generate a letter ( b, i, n, g, o) and a number (1-100)
-  # CREATE set up random generator for ("b", "i", "n", "g", "o") and (1-00)
+  # CREATE set up random generator for ("b", "i", "n", "g", "o") and (1-100)
   # ASSIGN letter and number to variables
   # INTERPOLATE two strings to create called space
 
