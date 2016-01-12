@@ -42,3 +42,13 @@ $('h1').animate({'font-size': '10em'})
 
 
 })  // end of the document.ready function: do not remove or write DOM manipulation below this.
+
+// 1. What is jQuery?
+// 	jQuery is another way to manipulate a web page, but with more functionality.  It takes
+// 	methods that would take a lot of JavaScript to accomplish, and wraps them up into just a
+// 	few lines of code.
+// 2. What does jQuery do for you?
+// 	jQuery allows you to manipulate the HTML or CSS of a page, as well as apply effects and
+// 	animations without having to write a whole mess of JavaScript.
+// 3. What did you learn about the DOM while working on this challenge?
+// 	I learned that you can manipulate any objects in the DOM, as long as they're selected properly.
